@@ -1,0 +1,5 @@
+let symb1 = Symbol('aba')
+console.log(typeof symb1)
+console.log(symb1.toString())
+document.write(typeof symb1)
+document.write(symb1.toString())
