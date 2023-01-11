@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+  }
+  
+  #choices {
+    display: flex;
+    justify-content:flex;
+    align-items: center;
+    margin:80px;
+  }
+  
+  #choices button {
+    width:500px;
+    border-radius: 120px;
+    font-size: 32px;
+    padding: 100px;
+    margin:10px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+  }
+  
+  #choices button:hover {
+    background-color:rgb(40, 40, 66)
+  }
