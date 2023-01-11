@@ -1,11 +1,8 @@
 function playRPS(playerChoice) {
-  // Array of possible computer choices
+
   const computerChoices = ["rock", "paper", "scissors"];
   
-  // Generate a random choice for the computer
   const computerChoice = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-  
-  // Determine the outcome of the game
   let result;
   if (playerChoice === computerChoice) {
     result = "Tie! Both players chose " + playerChoice + ".";
@@ -18,8 +15,6 @@ function playRPS(playerChoice) {
   } else {
     result = "You lose! " + computerChoice + " beats " + playerChoice + ".";
   }
-
-  // display the outcome and the computer choice
   const resultDiv = document.getElementById("result");
   resultDiv.innerHTML = `Result: ${result} <br> Computer Choice: ${computerChoice}`;
 }
