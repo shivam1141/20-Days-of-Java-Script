@@ -1,23 +1,19 @@
+let a = document.getElementById("a");
+let b = document.getElementById("b");
+let c = document.getElementById("c");
 
-    //Match function
-    function match(string, pattern) {
-        return string.match(pattern);
-    }
-    console.log(match("Hello World!", /world/i)); 
+// get atrribute method
+console.log(a.getAttribute("class")); // "hello"
+console.log(b.getAttribute("class")); // "world"
+console.log(c.getAttribute("class")); // "and"
 
-    //Closest function
-    function closest(element, selector) {
-        while(element && !element.matches(selector)) {
-            element = element.parentNode;
-        }
-        return element;
-    }
-    console.log(closest(document.querySelector("p"), ".container")); 
+// set attribute method
+a.setAttribute("class", "greetings");
+console.log(a.getAttribute("class")); // "greetings"
 
-    //Contain function
-    function contain(element, text) {
-        return element.textContent.includes(text);
-    }
-    console.log(contain(document.querySelector("p"), "Hello")); 
-    console.log(contain(document.querySelector("p"), "Goodbye")); 
+// remove attribute 
+a.removeAttribute("class");
+console.log(a.hasAttribute("class")); // false
 
+a.dataset.name = "shivam";
+console.log(a.dataset.name); // "shivam"
